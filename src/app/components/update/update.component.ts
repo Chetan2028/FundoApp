@@ -28,7 +28,6 @@ export class UpdateComponent implements OnInit {
   }
 
   updateNote(data1) {
-
     let data = {
       noteId: this.id,
       title: this.title,
