@@ -31,23 +31,17 @@ export class UpdateComponent implements OnInit {
 
     let data = {
       noteId: this.id,
-      // title: card.card.title,
       title: this.title,
       description: this.description,
-      
     }
     console.log("printing ", data );
-    
-
     this.noteService.updateNote(data).subscribe((response) => {
       console.log(" updated successfull", response);
       this.onNoClick();
 
     })
-
   }
   onNoClick(): void {
     this.dialogRef.close();
   }
-
 }
