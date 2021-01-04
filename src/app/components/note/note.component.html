@@ -1,6 +1,5 @@
 
 <!-- If u want to use Take note component(<app-takenote>) in this note html page then u have to define this selector -->
-
 <div class=" notecomp">
     <app-takenote  (messageEvent)="receiveMessage($event)" ></app-takenote>
     <app-displaynote [AllNotes]="notes" ></app-displaynote>
