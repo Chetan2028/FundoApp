@@ -10,14 +10,11 @@ export class UserServiceService {
 
   registerUser(data) {
     console.log("data in user service " , data);
-
     return this.httpService.post('user/userSignUp',data);
   }
 
   loginUser(data) {
-
     return this.httpService.post('user/login', data);
-
   }
 
 }
