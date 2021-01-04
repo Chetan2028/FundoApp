@@ -13,12 +13,12 @@ export class HttpServiceService {
   constructor(private http : HttpClient) { }
 
   post(url, data) {
-    // let options = {
-    //   headers: new HttpHeaders({
-    //     'Content-Type': 'application/json',
-    //     'Authorization': localStorage.getItem('token'),
-    //   })
-    // }
+    let options = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': localStorage.getItem('token'),
+      })
+    }
     console.log(" data in http ", data);
 
     return this.http.post(this.baseUrl + url, data);
