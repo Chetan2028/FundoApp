@@ -1,0 +1,175 @@
+// .card {
+//     transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+//     display: block;
+//     position: relative;
+//     padding: 16px;
+//     border-radius: 4px;
+//     width: 500px;
+//     margin-top: 50px;
+// }
+
+// .passd{
+//     display: flex;
+    
+// }
+// .main{
+//     min-height:-webkit-fill-available !important;
+//     margin-top: 20px;
+//   }
+//   .f{
+//     color:#4285F4;
+//     }
+//     .u{
+//     color:#DB4437
+//     }
+//     .n{
+//       color: #F4B400
+//     }
+//     .d{
+//       color:#4285F4;
+//     }
+//     .o{
+//       color:  #0F9D58
+//     }
+//     .O{
+//       color:#DB4437
+//     }
+  
+  
+//   a {
+//     text-decoration: none;
+//   }
+  
+//   .i{
+//     margin-top: 0px;
+//   }
+//   .signIn{
+//     color: #4586ee;
+//     font-weight: bold;
+//     cursor: pointer;
+//     // margin-top: 20%;
+//   }
+  
+//   .main{
+//     min-height:-webkit-fill-available !important;
+//     margin:0 auto;
+//   }
+//   .card :hover{
+//     background-color: #ffa500;
+//     transform: scale(1.1); 
+    
+//    }
+//    .service{
+//     margin-left: 36px;
+//     margin-top: 36px;
+//   }
+//   .message{
+//     margin-top: 8px;
+//   }
+ 
+//   .selected{
+//     background-color: #e6ac00;
+//     width: fit-content;
+//     max-width: 144px;
+  
+//   .insideMat{
+//      margin-left: -36px;
+//      margin-top: -36px;
+//      min-height: 212px;
+//   }
+  
+  
+  
+  
+//   }
+//   .notSelected{
+//     background-color: #b8b5ae;
+//     width: fit-content;
+//     max-width: 144px;
+  
+//     .insideMat{
+//         margin-left: -36px;
+//         margin-top: -36px;
+//      min-height: 212px;
+  
+//     }
+   
+//   }
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin:auto;
+  margin-top: 100px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.f {
+    color:#4285F4;
+}
+.u{
+    color:#DB4437
+}
+.n{
+    color: #F4B400
+}
+.d{
+    color:#4285F4;
+}
+.o{
+    color:  #0F9D58;
+}
+.O{
+  color:#DB4437;
+}
+
+
+.subtitle {
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.firstName-lastName {
+  display: flex;
+  width: 40%;
+}
+
+.email {
+  width:100%;
+}
+
+.password {
+  display: flex;
+}
+.passd {
+  margin-right: 20px;
+}
+
+.firstName { 
+  margin-right: 20px;
+  width: 238px;
+}
+.lastName {
+  width: 238px;
+}
+
+.button {
+  margin-right: 150px;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 80%;
+    margin:auto;
+    margin-top: 100px;
+  }
+}
