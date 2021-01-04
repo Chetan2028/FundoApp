@@ -24,5 +24,4 @@ export class NoteserviceService {
   deleteNotes(data){
     return this.http.post('notes/trashNotes',data)
   }
-
 }
