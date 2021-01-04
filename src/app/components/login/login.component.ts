@@ -30,7 +30,6 @@ export class LoginComponent implements OnInit {
     let reqData = {
       email: loginform.email,
       password: loginform.password
-
     }
     console.log(reqData);
 
@@ -40,8 +39,6 @@ export class LoginComponent implements OnInit {
       this.route.navigate(['dashboard'])
       
     });
-
-
   }
 
 }
