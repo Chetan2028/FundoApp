@@ -25,7 +25,8 @@ export class RegisterComponent implements OnInit {
       }, { validator: this.checkPasswords });
   }
 
-  checkPasswords(group: FormGroup) { // here we have the 'passwords' group
+  checkPasswords(group: FormGroup) {
+     // here we have the 'passwords' group
     let pass = group.controls.password.value;
     let confirmPass = group.controls.cpassword.value;
 
@@ -40,18 +41,14 @@ export class RegisterComponent implements OnInit {
             email: registerFormValue.email,
             password: registerFormValue.password,
             service: 'advance'
-        // console.log("new user created ", newUser);
           }
 
           this.userService.registerUser(newUser).subscribe(response => {
               console.log(" register successfull", response);
-
           });
-    
     } 
     catch (error) {
       console.log(error);
-
     }
   }
 
